@@ -5,7 +5,10 @@ const convertToCelsius = function(fahrenheitValue) {
   return parseFloat(roundedCelciusString);
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(celciusValue) {
+  let exactFarenheit = (celciusValue * (9/5)) + 32
+  let roundedFarenheitString = exactFarenheit.toFixed(1);
+  return parseFloat(roundedFarenheitString);
 };
 
 // Do not edit below this line
